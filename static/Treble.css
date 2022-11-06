@@ -1,0 +1,138 @@
+#SearchForm {
+    align-items: right !important;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.maindiv {
+    background-color: rgba(76, 74, 74, 0.278);
+    color: black;
+}
+
+.textOnImg {
+    background-color: rgba(135, 135, 135, 0.73);
+    text-align: center;
+    color: black;
+}
+
+.btnOnImg {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+}
+
+.textOnImgDark {
+    background-color: rgba(50, 50, 50, 0.73);
+    text-align: center;
+    color: rgb(255, 254, 254);
+}
+
+.imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.cardsDiv {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myCard {
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.851);
+}
+
+.myDiv {
+    text-align: center;
+    background-color: white;
+    margin-top: 2%;
+}
+
+.formDiv {
+    background-color: white;
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.formDivInt {
+    background-color: rgba(76, 74, 74, 0.278);
+    margin-top: 2%;
+    width: 30%;
+
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(89, 88, 88);
+}
+
+nav a {
+    color: rgb(67, 66, 66);
+    margin-right: 17px;
+    padding: 0px 0;
+}
+
+.eopNav {
+    color: grey;
+}
+
+li a:hover {
+    color: rgba(182, 2, 2, 0.866);
+}
+
+.nav-darkText {
+    color: rgba(255, 255, 255, 0.800);
+}
+
+.myHR {
+    background-color: rgba(0, 0, 0, 0.511);
+}
+
+.myHRDark {
+    background-color: white;
+}
+
+.ball {
+    animation: float 3s ease-in-out infinite;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+
+    background: radial-gradient( circle at 75% 30%, red 5px,
+        red 8%);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.table {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}

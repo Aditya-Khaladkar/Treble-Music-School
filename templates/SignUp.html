@@ -1,0 +1,192 @@
+<html>
+<head>	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/Treble.css">
+
+	<script src="/static/Treble.js"></script>
+
+	
+	<title>
+		Treble Music School
+	</title>
+</head>
+
+<body>
+
+	<div class="container-fluid maindiv" id="">
+	<!--NAVBAR-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light rounded" id="navigationBar">
+			<div class="navbar-nav mr-auto">
+				
+				<a class="navbar-brand" href="#">
+					<img id="navImg" src="/media/images/Treble1.png" width="50px" height="50px" class="d-inline-block align-self-center"> Treble
+				</a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="nav navbar">
+						<a class="nav-item" href="/">HOME</a>
+						<a class="nav-item" href="/about">ABOUT</a>
+						<a class="nav-item" href="/courses">COURSES</a>
+						<a class="nav-item" href="/contact">CONTACT</a>
+						<a class="nav-item" href="/signup" font color="red">SIGN UP</font></a>
+					</div>
+
+					<form class="form-inline my-2 my-lg-0" style="margin-left: 630px;">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchTextField">
+						<button class="btn btn-outline-danger" type="submit" id="searchButton">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+
+	<!--JUMBOTRON-->
+		<div class="jumbotron bg-light" style="margin-top: 2%;" id="jumbotron">
+			<img class="" src="/media/images/Treble.png" width="100px" , hieght="20px" , align=right>
+
+			<div class="row">
+				<div class="col-12"><h1 class="display-1 text-dark" id="jumbotronTitle"><font color="red">TREBLE</font> MUSIC SCHOOL</h1></div>
+			</div>
+
+			<div class="row">
+				<div class="col-6"><p class="display-4" style="color: rgb(132, 131, 131);"> Feel the music<font color="red">...</font></p></div>
+				<div class="col-6"></div>	
+			</div>
+
+			<div class="row"><p class="col-12"><br></p></div>
+			<div class="row"><p class="col-12"><br></p></div>
+			<div class="row"><p class="col-12"><br></p></div>
+
+			<div class="row">
+				<div class="col-6"><font class="col-6" color=red>(SIGN UP)</font></div>
+				<div class="col-md-1.5 offset-md-5 custom-control custom-switch align-bottom">
+					<input type="checkbox" class="custom-control-input justify-content-end" id="darkModeSwitch" align=right onclick="darkMode()">
+					<label class="custom-control-label" for="darkModeSwitch" id="darkModeSwitchLabel">Dark Mode</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="dots">
+			<div class="ball"></div>
+			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
+			<div class="ball"></div>
+		</div>
+
+
+		<div class="container-fluid rounded formDiv">
+
+			<h3 style="text-align: center;">ENQUIRY FORM</h3>
+			
+			<img class="" src="/media/images/Treble.png" width="150px" , height="300px" , align=left style="margin: 2%; margin-top: 10%; margin-left: 10%;">
+			<img class="" src="/media/images/Treble.png" width="150px" , height="300px" , align=right style="margin: 2%; margin-top: 10%; margin-right: 10%;">
+
+			<div class="container rounded formDivInt">
+				<form method="post" action="/" style="padding-top: 2%; padding-bottom: 2%;">
+                    {% csrf_token %}
+					
+					<label><b>Name:</b></label>
+						<Input type="text" class="form-control" placeholder="Enter Name" name="name">
+							<br>
+			
+					<label><b>Sex:</b></label><br>
+
+						<Input type=Radio name="sex" value="Male"> Male
+						<Input type=Radio name="sex" value="Female" style="margin-left: 5%;"> Female
+							<br><br>
+			
+					<label><b>Course:</b></label><br>
+						<Input type=Radio name="course" value="Piano"> Piano
+						<Input type=Radio name="course" value="Keyboard"> Keyboard
+							<br>
+						<Input type=Radio name="course" value="Plectrum Guitar"> Plecturm Guitar
+						<Input type=Radio name="course" value="Classical Guitar"> Classical Guitar
+						<Input type=Radio name="course" value="Electronic Guitar"> Electronic Guitar	
+							<br>
+						<Input type=Radio name="course" value="Bass"> Bass
+							<br>
+						<Input type=Radio name="course" value="Drums"> Drums and Percussion
+							<br>
+						<Input type=Radio name="course" value="Violin"> Violin
+							<br><br>
+					
+						<label><b>Email:</b></label>
+							<Input type="email" class="form-control" placeholder="Enter Email" name="email">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+								<br>
+			
+					<label><b>Special Comment:</b></label><br>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="feedback"></textarea>
+							<br>
+			
+					<input type=Reset Value="Reset" class="btn btn-warning" style="width: 25%;">
+					<input type=Submit Value="Submit" class="btn btn-primary" style="float: right; width: 25%;">
+			
+				</form>	
+			</div>
+		</div>
+
+
+		<div class="dots">
+			<div class="ball"></div>
+			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
+			<div class="ball"></div>
+		</div>
+
+
+	<!--Bottom of the Page-->
+		<div class="container-fluid" style="margin-top: 2%;">
+			<hr class="myHR" size="3" id="horizontalRule">
+
+			<p class="Display-4" style="color: rgb(132, 131, 131);">For more information:</p>
+
+
+			<div class="container">
+				<nav class="nav navbar-expand nav-fill">
+					<div class="collapse navbar-collapse" id="navbarcollapse">
+						<ul class="navbar-nav justify-content-between w-100">
+							<li>
+								<a class="nav-item eopNav" href="Home Page.html">HOME</font></a>
+							</li>
+							<li>
+								<font style="color: grey;">|</font>
+							</li>
+							<li>
+								<a class="nav-item eopNav" href="About.html">ABOUT</a>
+							</li>
+							<li>
+								<font style="color: grey;">|</font>
+							</li>
+							<li>
+								<a class="nav-item eopNav" href="Courses.html">CONTACT</a>
+							</li>
+							<li>
+								<font style="color: grey;">|</font>
+							</li>
+							<li>
+								<a class="nav-item eopNav" href="Contact.html">CONTACT</a>
+							</li>
+							<li>
+								<font style="color: grey;">|</font>
+							</li>
+							<li>
+								<a class="nav-item eopNav" href="SignUp.html"><font color="rgba(255, 0, 0, 0.092)">SIGN UP</font></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		
+		<br>
+
+
+
+	</div>
+	
+</body>
+</html>
+
+
+
+
+

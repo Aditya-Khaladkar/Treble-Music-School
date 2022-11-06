@@ -1,0 +1,252 @@
+<html>
+<head>	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/Treble.css">
+
+	<script src="/static/Treble.js"></script>
+
+	<title>
+		TMS Courses
+	</title>
+</head>
+
+<body>
+
+	<div class="container-fluid maindiv" id="">
+	<!--NAVBAR-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light rounded" id="navigationBar">
+			<div class="navbar-nav mr-auto">
+				
+				<a class="navbar-brand" href="/">
+					<img id="navImg" src="/media/images/Treble1.png" width="50px" height="50px" class="d-inline-block align-self-center"> Treble
+				</a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="nav navbar">
+						<a class="nav-item" href="/">HOME</a>
+						<a class="nav-item" href="/about">ABOUT</a>
+						<a class="nav-item" href="/courses"><font color="red">COURSES</font></a>
+						<a class="nav-item" href="/contact">CONTACT</a>
+						<a class="nav-item" href="/signup">SIGN UP</a>
+					</div>
+
+					<form class="form-inline my-2 my-lg-0" style="margin-left: 630px;">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchTextField">
+						<button class="btn btn-outline-danger" type="submit" id="searchButton">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		
+
+	<!--JUMBOTRON-->
+		<div class="jumbotron bg-light" style="margin-top: 2%;" id="jumbotron">
+			<img class="" src="/media/images/Treble.png" width="100px" , hieght="20px" , align=right>
+
+			<div class="row">
+				<div class="col-12"><h1 class="display-1 text-dark" id="jumbotronTitle"><font color="red">TREBLE</font> MUSIC SCHOOL</h1></div>
+			</div>
+
+			<div class="row">
+				<div class="col-6"><p class="display-4" style="color: rgb(132, 131, 131);"> Feel the music<font color="red">...</font></p></div>
+				<div class="col-6"></div>	
+			</div>
+
+			<div class="row"><p class="col-12"><br></p></div>
+			<div class="row"><p class="col-12"><br></p></div>
+			<div class="row"><p class="col-12"><br></p></div>
+
+			<div class="row">
+				<div class="col-6"><font class="col-6" color=red>(COURSES)</font></div>
+				<div class="col-md-1.5 offset-md-5 custom-control custom-switch align-bottom">
+					<input type="checkbox" class="custom-control-input justify-content-end" id="darkModeSwitch" align=right onclick="darkMode()">
+					<label class="custom-control-label" for="darkModeSwitch" id="darkModeSwitchLabel">Dark Mode</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="dots">
+			<div class="ball"></div>
+			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
+			<div class="ball"></div>
+		</div>
+
+
+	<!--PIANO-->
+		<div class="imgDiv">
+			<img class="img-fluid rounded" src="/media/images/Piano Course.jpg" style="width: 100%;">
+			
+			<div class="" style="position: absolute;">
+					<h2 class="Display-2 textOnImg" id="textOnImg1">
+						Press some keys and create <br> a soothing melody!
+					</h2>
+			</div>
+
+			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+
+			
+		</div>
+
+		
+		<div class="dots">
+			<div class="ball"></div>
+			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
+			<div class="ball"></div>
+		</div>
+
+
+	<!--KEYBOARD-->
+		<div class="imgDiv">
+			<img class="img-fluid rounded" src="/media/images/Keyboard Course.jpg" style="width: 100%;">
+			
+			<div class="" style="position: absolute;">
+					<h2 class="Display-2 textOnImg" id="textOnImg1">
+						Press some keys and create <br> and put on a show!
+					</h2>
+			</div>
+
+			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+		</div>
+
+		
+		<div class="dots">
+			<div class="ball"></div>
+			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
+			<div class="ball"></div>
+		</div>
+
+
+	<!--GUITAR-->
+		<div class="imgDiv">
+			<img class="img-fluid rounded" src="/media/images/Guitar Course.jpg" style="width: 100%;">
+			
+			<div class="" style="position: absolute;">
+					<h2 class="Display-2 textOnImg" id="textOnImg1">
+						Every strum will pull at your<br>heartstring.
+					</h2>
+			</div>
+
+			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+		</div>
+
+		
+		<div class="dots">
+			<div class="ball"></div>
+			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
+			<div class="ball"></div>
+		</div>
+
+		
+	<!--BASS-->
+		<div class="imgDiv">
+			<img class="img-fluid rounded" src="/media/images/Bass Course.jpg" style="width: 100%;">
+			
+			<div class="" style="position: absolute;">
+					<h2 class="Display-2 textOnImg" id="textOnImg1">
+						Slap a string and shake the world!
+					</h2>
+			</div>
+
+			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+		</div>
+
+		
+		<div class="dots">
+			<div class="ball"></div>
+			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
+			<div class="ball"></div>
+		</div>
+
+
+	<!--DRUMS-->
+		<div class="imgDiv">
+			<img class="img-fluid rounded" src="/media/images/Drums Course.webp" style="width: 100%;">
+			
+			<div class="" style="position: absolute;">
+					<h2 class="Display-2 textOnImg" id="textOnImg1">
+						Pick up those sticks and give rhythm<br>to the world!
+					</h2>
+			</div>
+
+			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+		</div>
+
+		
+		<div class="dots">
+			<div class="ball"></div>
+			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
+			<div class="ball"></div>
+		</div>
+
+
+
+	<!--VIOLIN-->
+		<div class="imgDiv">
+			<img class="img-fluid rounded" src="/media/images/Violin Course.jpg" style="width: 100%;">
+			
+			<div class="" style="position: absolute;">
+					<h2 class="Display-2 textOnImg" id="textOnImg1">
+						Bow the strings and fill your life<br>with melody.
+					</h2>
+			</div>
+
+			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+		</div>
+
+		
+		<div class="dots">
+			<div class="ball"></div>
+			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
+			<div class="ball"></div>
+		</div>
+
+
+	<!--Bottom of the Page-->
+		<div class="container-fluid" style="margin-top: 2%;">
+			<hr class="myHR" size="3" id="horizontalRule">
+
+			<p class="Display-4" style="color: rgb(132, 131, 131);">For more information:</p>
+
+
+			<div class="container">
+				<nav class="nav navbar-expand nav-fill">
+					<div class="collapse navbar-collapse" id="navbarcollapse">
+						<ul class="navbar-nav justify-content-between w-100">
+							<li>
+								<a class="nav-item eopNav" href="Home Page.html">HOME</a>
+							</li>
+							<li>
+								<font style="color: grey;">|</font>
+							</li>
+							<li>
+								<a class="nav-item eopNav" href="About.html">ABOUT</a>
+							</li>
+							<li>
+								<font style="color: grey;">|</font>
+							</li>
+							<li>
+								<a class="nav-item eopNav" href="Courses.html"><font color="rgba(255, 0, 0, 0.092)">COURSES</font></a>
+							</li>
+							<li>
+								<font style="color: grey;">|</font>
+							</li>
+							<li>
+								<a class="nav-item eopNav" href="Contact.html">CONTACT</a>
+							</li>
+							<li>
+								<font style="color: grey;">|</font>
+							</li>
+							<li>
+								<a class="nav-item eopNav" href="SignUp.html">SIGNUP</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		
+		<br>
+	</div>
+	
+</body>
+</html>
